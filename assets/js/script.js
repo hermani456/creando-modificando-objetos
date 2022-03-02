@@ -62,7 +62,7 @@ Paciente.prototype.getRut = function () {
 	return this._rut
 }
 Paciente.prototype.getDiagnostico = function () {
-	return this._disgnostico
+	return this._diagnostico
 }
 
 // Creando pacientes
@@ -79,13 +79,13 @@ p2.setRut("123456-9")
 p2.setDiagnostico("Covid-19")
 
 const p3 = new Paciente()
-p3.setEdad("Jose")
+p3.setNombre("Jose")
 p3.setEdad(33)
 p3.setRut("2156545-9")
 p3.setDiagnostico("Covid-19")
 
 const p4 = new Paciente()
-p4.setEdad("Esperanza")
+p4.setNombre("Esperanza")
 p4.setEdad(25)
 p4.setRut("45678-9")
 p4.setDiagnostico("Llego muerta")
@@ -100,4 +100,4 @@ cesfamAguirre.agregarPaciente(p4)
 // Mostrando Información
 console.log(cesfamAguirre)
 cesfamAguirre.listarPacientes()
-cesfamAguirre.buscarPacienteNombre("Mario")
+cesfamAguirre.buscarPacienteNombre("Jose")
